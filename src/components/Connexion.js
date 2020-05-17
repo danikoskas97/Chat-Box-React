@@ -4,10 +4,12 @@ export default class Connexion extends Component {
   state = {
     peseudo: "",
   };
+
   handelChange = (event) => {
     const pseudo = event.taget.value;
-    this.setState({ pseudo });
+    this.setState({ pseudo })
   };
+
   render() {
     return (
       <div className="conenxionBox">
@@ -22,6 +24,6 @@ export default class Connexion extends Component {
           <button type="submit">GO</button>
         </form>
       </div>
-    );
+    )
   }
 }
